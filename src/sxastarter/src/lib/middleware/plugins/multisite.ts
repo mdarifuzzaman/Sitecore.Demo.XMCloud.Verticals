@@ -27,7 +27,7 @@ class MultisitePlugin implements MiddlewarePlugin {
       // Site resolver implementation
       siteResolver,
       // This function allows resolving site from sc_site cookie, which could be useful in case of Vercel preview URLs. Accepts NextRequest.
-      useCookieResolution: () => process.env.VERCEL_ENV === 'preview',
+      useCookieResolution: () => true, //process.env.VERCEL_ENV === 'preview',
     });
   }
 
