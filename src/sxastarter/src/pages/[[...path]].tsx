@@ -12,16 +12,40 @@ import { handleEditorFastRefresh } from '@sitecore-jss/sitecore-jss-nextjs/utils
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentBuilder } from 'temp/componentBuilder';
+import { init, personalize } from '@sitecore-cloudsdk/personalize/browser';
+import config from 'temp/config';
 
 const SitecorePage = ({
   notFound,
   componentProps,
   layoutData,
   headLinks,
-}: SitecorePageProps): JSX.Element => {
+}: SitecorePageProps): JSX.Element => {  
   useEffect(() => {
     // Since Sitecore editors do not support Fast Refresh, need to refresh editor chromes after Fast Refresh finished
     handleEditorFastRefresh();
+
+  }, []);
+
+  useEffect(() => {
+    const initPersonalize = async () => {
+      await init({
+        sitecoreEdgeContextId: config.sitecoreEdgeContextId,
+        siteName: config.sitecoreSiteName,
+        enableBrowserCookie: true,        
+      });
+      console.log("Initialized the personalize/browser module.", config);
+
+      const personalizeResponse = await personalize({
+        channel: "Web",
+        friendlyId: "experiencesessionexpired",
+        currency: "EUR",        
+      });
+      
+      console.log("This experience is now running:", personalizeResponse);
+    }
+  
+    initPersonalize();
   }, []);
 
   if (notFound || !layoutData.sitecore.route) {

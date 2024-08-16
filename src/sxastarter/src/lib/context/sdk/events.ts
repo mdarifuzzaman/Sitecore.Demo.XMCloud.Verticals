@@ -8,8 +8,8 @@ const sdkModule: SDK<typeof Events> = {
     // We also don't want to initialize it in development mode
     if (typeof window === 'undefined')
       throw 'Browser Events SDK is not initialized in server context';
-    if (process.env.NODE_ENV === 'development')
-      throw 'Browser Events SDK is not initialized in development environment';
+    // if (process.env.NODE_ENV === 'development')
+    //   throw 'Browser Events SDK is not initialized in development environment';
 
     await Events.init({
       siteName: props.siteName,

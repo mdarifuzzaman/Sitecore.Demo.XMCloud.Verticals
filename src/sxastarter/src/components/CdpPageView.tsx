@@ -24,7 +24,7 @@ const CdpPageView = (): JSX.Element => {
    * By default it is disabled in development mode
    */
   const disabled = () => {
-    return process.env.NODE_ENV === 'development';
+    return false; //process.env.NODE_ENV === 'development';
   };
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const CdpPageView = (): JSX.Element => {
           channel: 'WEB',
           currency: 'USD',
           page: route.name,
-          pageVariantId,
+          pageVariantId,          
           language,
         })
       )

@@ -1,4 +1,5 @@
 import React from 'react';
+import { context } from 'lib/context';
 import {
   Image as JssImage,
   Link as JssLink,
@@ -30,9 +31,15 @@ const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
 
 export const Default = (props: PromoProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+  const handleClick = () => {
+    context.getSDK("Events").then((Events) => {
+      Events.event({type: "basicsite:CLICKED_PROMO"});
+    }).catch((e) => console.debug(e));
+    console.log("Send custom event");
+  }
   if (props.fields) {
     return (
-      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined}>
+      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined} onClick={handleClick}>
         <div className="component-content">
           <div className="field-promoicon">
             <JssImage field={props.fields.PromoIcon} />
