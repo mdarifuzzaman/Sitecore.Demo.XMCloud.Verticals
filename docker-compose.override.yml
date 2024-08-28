@@ -100,6 +100,12 @@ services:
       SITECORE_GraphQL_CORS: ${SITECORE_GRAPHQL_CORS}
       SITECORE_Pages_Client_Host: ${SITECORE_Pages_Client_Host}
       SITECORE_Pages_CORS_Allowed_Origins: ${SITECORE_Pages_CORS_Allowed_Origins}
+      ## Content Hub related configurations
+      Sitecore_ConnectionStrings_DAM.ContentHub: ${Sitecore_ConnectionStrings_DAM_dot_ContentHub}
+      Sitecore_ConnectionStrings_DAM.SearchPage: ${Sitecore_ConnectionStrings_DAM_dot_SearchPage}
+      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey}
+      SITECORE_AppSettings_damEnabled:define: ${SITECORE_AppSettings_damEnabled__define}
+      
       ## Development Environment Optimizations
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,DebugOn,DiagnosticsOff,InitMessagesOff
       Sitecore_AppSettings_exmEnabled:define: "no" # remove to turn on EXM

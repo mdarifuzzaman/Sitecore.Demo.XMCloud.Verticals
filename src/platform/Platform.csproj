@@ -68,6 +68,7 @@
     <PackageReference Include="Sitecore.XmCloud.LayoutService" />
     <PackageReference Include="Sitecore.XmCloud.Assemblies" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
+    <PackageReference Include="Sitecore.XmCloud.Connector.ContentHub.DAM.FieldSerializers" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.Demo.Verticals.config" />
@@ -223,6 +224,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Pipelines\GetFieldSerializer\GetImageFieldSerializerExtendCustom.cs" />
+    <Compile Include="Pipelines\GetFieldSerializer\ImageFieldSerializerExtendCustom.cs" />
     <Compile Include="Pipelines\GetLayoutServiceContext\ThemeContext.cs" />
     <Compile Include="Pipelines\ParseSiteItem\AddThemeProperty.cs" />
     <Compile Include="Utilities\InitializeComponentsLibraryId.aspx.cs">
