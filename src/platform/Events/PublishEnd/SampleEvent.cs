@@ -10,10 +10,6 @@ namespace XmCloudSXAStarter.Events.PublishEnd
 {
     public class SampleEvent
     {
-        public IItemSiteResolver _siteResolver;
-        public SampleEvent(IItemSiteResolver itemSiteResolver) { 
-            _siteResolver = itemSiteResolver;
-        }
         public void OnPublishEnd(object sender, EventArgs args)
         {
             var stopWatch = Stopwatch.StartNew();
@@ -24,19 +20,10 @@ namespace XmCloudSXAStarter.Events.PublishEnd
 
             var publisher = sitecoreArgs.Parameters[0] as Publisher;
             if(publisher == null) return;
-            var rootItem = publisher.Options.RootItem;
-
-            var siteObject = _siteResolver.ResolveSite(rootItem);
-            if (siteObject == null)
-            {
-                Sitecore.Diagnostics.Log.Warn("Siteobject found: ", this);
-            }
-            else
-            {
-                Sitecore.Diagnostics.Log.Warn($"Siteobject Sitename: {siteObject.Name}, Host={siteObject.HostName}" , this);
-            }
+            var rootItem = publisher.Options.RootItem;            
             
-            var site = Sitecore.Context.Site.Name;
+            var site = Sitecore.Context.Site;
+            Sitecore.Diagnostics.Log.Warn($"Site Sitename: {site?.Name}, Host={site?.HostName}", this);
             var page = rootItem.Paths.Path;
 
 
