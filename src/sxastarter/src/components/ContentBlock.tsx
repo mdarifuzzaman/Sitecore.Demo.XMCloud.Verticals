@@ -17,7 +17,7 @@ const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => (
   <div className="contentBlock">
     <Text tag="h2" className="contentTitle" field={fields.heading} />
 
-    <RichText className="contentDescription" field={fields.content} />
+    <RichText className="contentDescription" field={fields.content} />    
   </div>
 );
 
