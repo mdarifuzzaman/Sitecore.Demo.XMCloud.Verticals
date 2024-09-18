@@ -9,7 +9,7 @@ interface ComponentProps {
 
 export default function NestedComponentContainer(props: ComponentProps) {
   console.log("NestedComponentContainer", props);
-  const phKey = `container-${props.params.DynamicPlaceholderId}`;
+  const phKey = `nestedcontainer-${props.params.DynamicPlaceholderId}`;
   const id = props.params.RenderingIdentifier;
   return (
     <div className={`component container-default`} id={id ? id : undefined}>
