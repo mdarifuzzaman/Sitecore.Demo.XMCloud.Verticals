@@ -23,6 +23,8 @@ interface RouteFields {
 }
 
 const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
+
+  //console.log("Layout data", layoutData);
   const { route } = layoutData.sitecore;
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;

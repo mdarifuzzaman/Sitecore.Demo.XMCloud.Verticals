@@ -38,6 +38,8 @@ export type FooterProps = {
 };
 
 export const Default = (props: FooterProps): JSX.Element => {
+
+  console.log("Footer", props);
   const id = props.params.RenderingIdentifier;
 
   return (
