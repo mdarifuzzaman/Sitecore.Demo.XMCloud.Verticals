@@ -224,6 +224,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="ComputedFields\SortOrder.cs" />
     <Compile Include="Events\PublishEnd\SampleEvent.cs" />
     <Compile Include="Pipelines\GetFieldSerializer\GetImageFieldSerializerExtendCustom.cs" />
     <Compile Include="Pipelines\GetFieldSerializer\ImageFieldSerializerExtendCustom.cs" />
