@@ -1,25 +1,30 @@
-import { Image as JssImage } from '@sitecore-jss/sitecore-jss-nextjs'
+import { NextImage } from '@sitecore-jss/sitecore-jss-nextjs'
 import React from 'react'
 import { CarouselItemProps } from './Carousel'
 import { PromoCtaProps } from './PromoCta'
-import Image from 'next/image'
 
 type ImageWrapperProps = {
     item: CarouselItemProps | PromoCtaProps,
     isPageEditing: boolean,
     editClass: string,
-    viewClass: string
+    viewClass?: string
 }
 
-export default function ImageWrapper({item, isPageEditing, editClass, viewClass}: ImageWrapperProps) {
+export default function ImageWrapper({item, editClass}: ImageWrapperProps) {
   const mediaUrl = "https://financial.sitecoreedge.online"  + removeHostPartFromUrl(item.fields?.Image?.value?.src?.toString() + "")
+  const modifiedField = {
+    ...item.fields.Image,
+    value: {
+      ...item.fields.Image.value,
+      src: mediaUrl, // Replace original URL with transformed URL
+    },
+ };
   return (
-      <>{ isPageEditing ?   <JssImage
-                field={item.fields.Image}
+      <NextImage
+                field={modifiedField}
                 className={`${editClass}`}
-                height={' '}
-              ></JssImage> : <Image width={1920} height={720} alt='image' src={mediaUrl} className={`${viewClass}`}></Image>
-      }</>
+              ></NextImage> 
+      
   )
 }
 
