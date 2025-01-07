@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Field,
   ImageField,
-  Image,
   RichTextField,
   Text,
   RichText,
@@ -15,6 +14,7 @@ import { ParallaxBackgroundImage } from 'components/NonSitecore/ParallaxBackgrou
 import useVisibility from 'src/hooks/useVisibility';
 import { ComponentProps } from 'lib/component-props';
 import { DottedAccent } from 'components/NonSitecore/DottedAccent';
+import ImageWrapper from './ImageWrapper';
 
 interface Fields {
   Eyebrow: Field<string>;
@@ -74,12 +74,18 @@ export const Default = (props: PromoCtaProps): JSX.Element => {
           <div className="col-md-10 mx-auto col-lg-7 mx-lg-0">
             <div className="image-wrapper">
               <DottedAccent className="dotted-accent-top" />
-              <Image
+              <ImageWrapper editClass={`d-block mx-lg-auto img-fluid ${
+                  !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
+                }`} viewClass={`d-block mx-lg-auto img-fluid ${
+                  !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
+                }`}
+                isPageEditing={isPageEditing || false } item={props}></ImageWrapper> 
+              {/* <Image
                 field={props.fields.Image}
                 className={`d-block mx-lg-auto img-fluid ${
                   !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
                 }`}
-              ></Image>
+              ></Image> */}
               <DottedAccent className="dotted-accent-bottom" />
             </div>
           </div>
@@ -138,12 +144,19 @@ export const WithPlaceholderColumn = (props: PromoCtaProps): JSX.Element => {
 
               <div className="image-wrapper d-none d-md-block col-md-8">
                 <DottedAccent className="dotted-accent-top" />
-                <Image
+                <ImageWrapper editClass={`d-block mx-lg-auto img-fluid ${
+                    !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
+                  }`} viewClass={`d-block mx-lg-auto img-fluid ${
+                    !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
+                  }`}
+                isPageEditing={isPageEditing || false } item={props}></ImageWrapper> 
+
+                {/* <Image
                   field={props.fields.Image}
                   className={`d-block mx-lg-auto img-fluid ${
                     !isPageEditing ? `fade-section ${isVisible ? 'is-visible' : ''}` : ''
                   }`}
-                ></Image>
+                ></Image> */}
                 <DottedAccent className="dotted-accent-bottom" />
               </div>
             </div>

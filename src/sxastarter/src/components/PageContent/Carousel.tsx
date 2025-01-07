@@ -3,8 +3,7 @@ import {
   ComponentParams,
   ComponentRendering,
   Field,
-  ImageField,
-  Image,
+  ImageField,  
   RichTextField,
   LinkField,
   Text,
@@ -12,6 +11,7 @@ import {
   RichText,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import ImageWrapper from './ImageWrapper';
 
 interface Fields {
   Title: Field<string>;
@@ -69,11 +69,13 @@ export const Default = (props: CarouselComponentProps): JSX.Element => {
                 <source src={item.fields.Video.value.src} type="video/webm" />
               </video>
             ) : (
-              <Image
-                field={item.fields.Image}
-                className="object-fit-cover d-block w-100 h-100"
-                height={' '}
-              ></Image>
+             <ImageWrapper editClass='object-fit-cover d-block w-100 h-100' viewClass='object-fit-cover d-block w-100 h-100'
+                isPageEditing={isPageEditing || false } item={item}></ImageWrapper> 
+            //  <Image
+            //     field={item.fields.Image}
+            //     className="object-fit-cover d-block w-100 h-100"
+            //     height={' '}
+            //   ></Image>
             )}
 
             <div className="side-content">
