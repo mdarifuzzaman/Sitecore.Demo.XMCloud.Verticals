@@ -1,4 +1,4 @@
-import { NextImage } from '@sitecore-jss/sitecore-jss-nextjs'
+import { Image } from '@sitecore-jss/sitecore-jss-nextjs'
 import React from 'react'
 import { CarouselItemProps } from './Carousel'
 import { PromoCtaProps } from './PromoCta'
@@ -20,10 +20,10 @@ export default function ImageWrapper({item, editClass}: ImageWrapperProps) {
     },
  };
   return (
-      <NextImage
+      <Image
                 field={modifiedField}
                 className={`${editClass}`}
-              ></NextImage> 
+              ></Image> 
       
   )
 }
