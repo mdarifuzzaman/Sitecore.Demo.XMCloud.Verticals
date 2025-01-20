@@ -18,5 +18,6 @@
     <PackageReference Update="Sitecore.XA.Foundation.SitecoreExtensions" Version="10.4" />
     <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="19.*" />
 	<PackageReference Update="Sitecore.XmCloud.Connector.ContentHub.DAM.FieldSerializers" Version="1.*" />
+	<PackageReference Update="Sitecore.Connector.CMP" Version="5.2.96" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,20 @@
+﻿---
+ID: "87883e48-0b5e-4962-8b53-17247c59e244"
+Parent: "7747d753-d7aa-4f5a-a448-19f6c4e1e489"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/User Defined/CMP Connect/Recipe/Data/Cookinginstructions
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Rich Text
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ed81010-b3a2-45a9-b0ee-e1e9866cde86"

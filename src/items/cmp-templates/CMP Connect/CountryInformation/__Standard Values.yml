@@ -1,0 +1,17 @@
+﻿---
+ID: "0d2f74b6-6311-443d-8346-e2a1c7deaa50"
+Parent: "c28ea69b-2ecc-4119-9ea6-8e65595be98d"
+Template: "c28ea69b-2ecc-4119-9ea6-8e65595be98d"
+Path: /sitecore/templates/User Defined/CMP Connect/CountryInformation/__Standard Values
+SharedFields:
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7b59225-89d8-4a81-91d9-1928982d7680"

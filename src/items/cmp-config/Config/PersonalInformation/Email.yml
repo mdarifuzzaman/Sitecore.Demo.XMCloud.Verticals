@@ -1,0 +1,24 @@
+﻿---
+ID: "3b2b23cc-0b0b-4902-9cb8-49b50df836bd"
+Parent: "a4c087d8-bb28-497e-9ac5-2de6024332fa"
+Template: "e43e2773-7a50-4145-a266-312024f27382"
+Path: /sitecore/system/Modules/CMP/Config/PersonalInformation/Email
+BranchID: "70eb42ee-92b2-4246-bc65-aa920bb7f322"
+SharedFields:
+- ID: "da990633-7884-44a2-8638-94389c5cbfec"
+  Hint: CMP Field Name
+  Value: Email
+- ID: "db99415a-fe86-4a2d-9583-db92894cb80a"
+  Hint: Sitecore Field Name
+  Value: "{D23F6E9F-F95F-4D61-9532-0F51B51615AB}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{4C94598B-EB37-400C-88C3-BEB971888C9A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "00de7e74-64b9-47f2-940e-8ce19532ae79"

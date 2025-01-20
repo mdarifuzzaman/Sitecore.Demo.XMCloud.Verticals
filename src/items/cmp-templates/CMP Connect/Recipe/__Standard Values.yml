@@ -1,0 +1,17 @@
+﻿---
+ID: "a63cbc50-be5d-440a-bfb7-cb125f067691"
+Parent: "4347c413-e34c-498e-9c26-4826398d44f1"
+Template: "4347c413-e34c-498e-9c26-4826398d44f1"
+Path: /sitecore/templates/User Defined/CMP Connect/Recipe/__Standard Values
+SharedFields:
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac159112-8e25-49e1-ae1b-77c3d9fc2a17"

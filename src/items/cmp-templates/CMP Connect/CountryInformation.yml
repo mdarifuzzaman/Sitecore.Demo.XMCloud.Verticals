@@ -1,0 +1,22 @@
+﻿---
+ID: "c28ea69b-2ecc-4119-9ea6-8e65595be98d"
+Parent: "9a65cbec-9a6b-4e98-a4ee-e4b8d12ee92f"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/User Defined/CMP Connect/CountryInformation
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {0D17BE5B-EC2A-4296-8D3F-930EB60DFE7C}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{0D2F74B6-6311-443D-8346-E2A1C7DEAA50}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2ce95fe-74a9-4f88-a91d-8828ae4f77b2"

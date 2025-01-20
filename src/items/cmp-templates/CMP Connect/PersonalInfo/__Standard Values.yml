@@ -1,0 +1,17 @@
+﻿---
+ID: "7c3c642a-2a5b-49f4-8909-a8725075e6f5"
+Parent: "1d62a479-0dae-4568-9604-2c8823cbb290"
+Template: "1d62a479-0dae-4568-9604-2c8823cbb290"
+Path: /sitecore/templates/User Defined/CMP Connect/PersonalInfo/__Standard Values
+SharedFields:
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8abac3e1-edb4-400d-ab4c-f65ad4453e56"

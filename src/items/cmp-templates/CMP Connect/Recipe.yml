@@ -1,0 +1,22 @@
+﻿---
+ID: "4347c413-e34c-498e-9c26-4826398d44f1"
+Parent: "9a65cbec-9a6b-4e98-a4ee-e4b8d12ee92f"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/User Defined/CMP Connect/Recipe
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {0D17BE5B-EC2A-4296-8D3F-930EB60DFE7C}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{A63CBC50-BE5D-440A-BFB7-CB125F067691}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29f40026-c0e8-403d-a056-fdada5a850e5"

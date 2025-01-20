@@ -1,0 +1,13 @@
+﻿---
+ID: "fd6c6cb6-f8a9-4041-b15f-d7494ea4dec3"
+Parent: "1d62a479-0dae-4568-9604-2c8823cbb290"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/User Defined/CMP Connect/PersonalInfo/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e80b2143-3386-42e6-bc4c-6cc41a73bdc3"

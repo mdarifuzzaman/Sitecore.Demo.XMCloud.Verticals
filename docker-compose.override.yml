@@ -102,10 +102,20 @@ services:
       SITECORE_Pages_Client_Host: ${SITECORE_Pages_Client_Host}
       SITECORE_Pages_CORS_Allowed_Origins: ${SITECORE_Pages_CORS_Allowed_Origins}
       ## Content Hub related configurations
-      Sitecore_ConnectionStrings_DAM.ContentHub: ${Sitecore_ConnectionStrings_DAM_dot_ContentHub}
-      Sitecore_ConnectionStrings_DAM.SearchPage: ${Sitecore_ConnectionStrings_DAM_dot_SearchPage}
-      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey}
-      SITECORE_AppSettings_damEnabled:define: ${SITECORE_AppSettings_damEnabled__define}
+      # Sitecore_ConnectionStrings_DAM.ContentHub: ${Sitecore_ConnectionStrings_DAM_dot_ContentHub}
+      # Sitecore_ConnectionStrings_DAM.SearchPage: ${Sitecore_ConnectionStrings_DAM_dot_SearchPage}
+      # Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey}
+      # SITECORE_AppSettings_damEnabled:define: ${SITECORE_AppSettings_damEnabled__define}
+      Sitecore_ConnectionStrings_CMP_dot_ContentHub: ${Sitecore_CMP_ContentHub}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathIn: ${Sitecore_CMP_Service_ServiceBusEntityPathIn}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathOut: ${Sitecore_CMP_Service_ServiceBusEntityPathOut}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusSubscription: ${Sitecore_CMP_Service_ServiceBusSubscription}
+      SITECORE_AppSettings_cmpEnabled__define: ${SITECORE_AppSettings_cmpEnabled__define}
+
+      Sitecore_ConnectionStrings_DAM_dot_ContentHub: ${Sitecore_DAM_ContentHub}
+      Sitecore_ConnectionStrings_DAM_dot_SearchPage: ${Sitecore_DAM_SearchPage}
+      Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey: ${Sitecore_DAM_ExternalRedirectKey}
+      SITECORE_AppSettings_damEnabled__define: ${SITECORE_DAM_ENABLED} 
       
       ## Development Environment Optimizations
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,DebugOn,DiagnosticsOff,InitMessagesOff

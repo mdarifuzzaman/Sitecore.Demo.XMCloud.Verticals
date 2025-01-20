@@ -1,0 +1,13 @@
+﻿---
+ID: "7747d753-d7aa-4f5a-a448-19f6c4e1e489"
+Parent: "4347c413-e34c-498e-9c26-4826398d44f1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/User Defined/CMP Connect/Recipe/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "37e69937-1381-43fe-821e-40944ed663b3"

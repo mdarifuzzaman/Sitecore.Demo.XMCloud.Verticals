@@ -38,7 +38,13 @@
             },
             {
                 "name": "cmp-config",
-                "path": "/sitecore/system/Modules/CMP/Config"
+                "path": "/sitecore/system/Modules/CMP/Config",
+                "scope": "ItemAndDescendants"
+            },
+            {
+                "name": "cmp-templates",
+                "path": "/sitecore/templates/User Defined/CMP Connect",
+                "scope": "ItemAndDescendants"
             },
             {
                 "name": "branches",

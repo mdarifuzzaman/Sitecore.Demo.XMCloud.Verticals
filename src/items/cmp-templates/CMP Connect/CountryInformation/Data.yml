@@ -1,0 +1,13 @@
+﻿---
+ID: "5c92f09f-7727-4965-9960-de0cf28afe48"
+Parent: "c28ea69b-2ecc-4119-9ea6-8e65595be98d"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/User Defined/CMP Connect/CountryInformation/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2d18059c-bc31-49e8-aab7-26381cde5612"
